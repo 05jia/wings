@@ -1,0 +1,213 @@
+<!-- DOCTYPE html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store</title>
+    <link rel="stylesheet" href="style.css">
+   <style>
+    :root{
+        --color-primary:#0073ff;
+        --color-white:#e9e9e9;
+        --color-black:#141d28;
+        --color-black-1:#212b38;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        /* 标准盒子 */
+        box-sizing:border-box;
+    }
+    body{
+        font-family: sans-serif;
+    }
+    .logo{
+        color: var(--color-white);
+        font-size: 30px;
+
+    }
+    .logo span{
+        color: var(--color-primary);
+    }
+    .menu-bar{
+        background-color: var(--color-black);
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        position: relative;
+    }
+    .menu-bar ul{
+        list-style: none;
+        display: flex;
+    }
+    .menu-bar li{
+        /* width: 120%; */
+        padding: 10px 30px;
+        /* text-align: center; */
+        position: relative;
+
+    }
+    .menu-bar li a{
+        font-size: 20px;
+        color: var(--color-white);
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    .menu-bar li a:hover{
+        color: var(--color-primary);
+    }
+    .dropdown-menu{
+        display:none;
+        position: absolute;
+        min-width: 160px;
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 1;
+        scrollbar-width: none;
+    }
+    .menu-bar ul li:hover
+    .dropdown-menu{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: var(--color-black);
+    }
+    .menu-bar ul li:hover
+    .dropdown-menu ul{
+        display: block;
+        margin: 10px;
+    }
+    .menu-bar ul li:hover
+    .dropdown-menu li{
+        width: 150px;
+        padding: 10px;
+        text-align: center;
+    }
+   </style>
+    
+</head>
+<body>
+    <!-- <div class="downorder"> -->
+        <div class="menu-bar">
+            <h1 class="logo">水果 <span>之乡</span></h1>
+                <ul>
+                    <li><a href="#">简介</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">网站简介</a></li>
+                                <li><a href="#">发展历程</a></li>
+                                <li><a href="#">企业组成</a></li>
+                                <li><a href="#">企业文化</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">云南</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">石榴</a></li>
+                                <li><a href="#">西瓜</a></li>
+                                <li><a href="#">芒果</a></li>
+                                <li><a href="#">菠萝</a></li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li><a href="#">攀枝花</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">芒果</a></li>
+                                <li><a href="#">李子</a></li>
+                                <li><a href="#">莲雾</a></li>
+                                <li><a href="#">枇杷</a></li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li><a href="#">海南</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">椰子</a></li>
+                                <li><a href="#">菠萝蜜</a></li>
+                                <li><a href="#">荔枝</a></li>
+                                <li><a href="#">芒果</a></li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li><a href="#">新疆</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">葡萄</a></li>
+                                <li><a href="#">哈密瓜</a></li>
+                                <li><a href="#">香梨</a></li>
+                                <li><a href="#">苹果</a></li>
+                            </ul> 
+                        </div>
+                    </li>
+                    <li><a href="#">四川</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">猕猴桃</a></li>
+                                <li><a href="#">枇杷</a></li>
+                                <li><a href="#">水蜜桃</a></li>
+                                <li><a href="#">雪梨</a></li>
+                            </ul> 
+                        </div>
+                    </li>  
+                </ul>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- <button class="order">简介</button>
+        <div class="downtext">
+            <a href="#">网站简介</a>
+            <a href="#">发展历程</a>
+            <a href="#">企业组成</a>
+            <a href="#">企业文化</a>
+        </div>
+        <button class="order">云南</button>
+        <div class="downtext">
+            <a href="#">石榴</a>
+            <a href="#">西瓜</a>
+            <a href="#">芒果</a>
+            <a href="#">菠萝</a>
+        </div>
+        <button class="order">攀枝花</button>
+        <div class="downtext">
+            <a href="#">芒果</a>
+            <a href="#">李子</a>
+            <a href="#">莲雾</a>
+            <a href="#">枇杷</a>
+        </div>
+        <button class="order">海南</button>
+        <div class="downtext">
+            <a href="#">椰子</a>
+            <a href="#">菠萝蜜</a>
+            <a href="#">荔枝</a>
+            <a href="#">芒果</a>
+        </div>
+        <button class="order">新疆</button>
+        <div class="downtext">
+            <a href="#">葡萄</a>
+            <a href="#">哈密瓜</a>
+            <a href="#">香梨</a>
+            <a href="#">苹果</a>
+        </div>
+        <button class="order">四川</button>
+        <div class="downtext">
+            <a href="#">猕猴桃</a>
+            <a href="#">枇杷</a>
+            <a href="#">水蜜桃</a>
+            <a href="#">雪梨</a>
+        </div>
+    </div> -->
+</body>
+</html>
