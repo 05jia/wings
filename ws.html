@@ -88,6 +88,75 @@
         padding: 10px;
         text-align: center;
     }
+    .box{
+        width: 1000px;
+        height: 460px;
+        position: relative;
+    }
+    .box-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    .box-img:nth-child(1){
+        opacity: 1;
+    }
+    
+
+    .box-left{
+        position: absolute;
+        width: 35px;
+        height: 70px;
+        color: white;
+        top: 195px;
+        border-radius: 0 5px 5px 0;
+        text-align: center;
+        line-height: 70px;
+    }
+    .box-left:hover{
+        background-color: #00000050;
+        color: white;
+    }
+    .box-right{
+        position: absolute;
+        width: 35px;
+        height: 70px;
+        color: white;
+        top: 195px;
+        border-radius: 0 5px 5px 0;
+        text-align: center;
+        line-height: 70px;
+        right: 0;
+    }
+    .box-right:hover{
+        background-color: #00000050;
+        color: white;
+    }
+    .box-change ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        
+    }
+    .box-change li{
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        background-color: #ccc;
+        float: left;
+        margin-right: 10px;
+
+    }
+    .box-change li:hover{
+        background-color: white;
+    }
+
+    .box-change{
+        position: absolute;
+        bottom: 30px;
+        right: 100px;
+    }
    </style>
     
 </head>
@@ -158,56 +227,37 @@
                     </li>  
                 </ul>
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        <!-- <button class="order">简介</button>
-        <div class="downtext">
-            <a href="#">网站简介</a>
-            <a href="#">发展历程</a>
-            <a href="#">企业组成</a>
-            <a href="#">企业文化</a>
+        <div class="box">
+            <div class="box-img"><img src="简介.jpg" width="1000" height="460"></div>
+            <div class="box-img"><img src="云南.jpg" width="1000" height="460"></div>
+            <div class="box-img"><img src="攀枝花.jpg" width="1000" height="460"></div>
+            <div class="box-img"><img src="海南.jpg" width="1000" height="460"></div>
+            <div class="box-img"><img src="新疆.jpg" width="1000" height="460"></div>
+            <div class="box-img"><img src="四川.jpg" width="1000" height="460"></div>
+            <div class="box-left">&lt;</div>
+            <div class="box-right">&gt;</div>
+            <div class="box-change">
+                <ul>
+                    <li class="button"></li>
+                    <li class="button"></li>
+                    <li class="button"></li>
+                    <li class="button"></li>
+                    <li class="button"></li>
+                    <li class="button"></li>
+                    
+                </ul>
+            </div>
         </div>
-        <button class="order">云南</button>
-        <div class="downtext">
-            <a href="#">石榴</a>
-            <a href="#">西瓜</a>
-            <a href="#">芒果</a>
-            <a href="#">菠萝</a>
-        </div>
-        <button class="order">攀枝花</button>
-        <div class="downtext">
-            <a href="#">芒果</a>
-            <a href="#">李子</a>
-            <a href="#">莲雾</a>
-            <a href="#">枇杷</a>
-        </div>
-        <button class="order">海南</button>
-        <div class="downtext">
-            <a href="#">椰子</a>
-            <a href="#">菠萝蜜</a>
-            <a href="#">荔枝</a>
-            <a href="#">芒果</a>
-        </div>
-        <button class="order">新疆</button>
-        <div class="downtext">
-            <a href="#">葡萄</a>
-            <a href="#">哈密瓜</a>
-            <a href="#">香梨</a>
-            <a href="#">苹果</a>
-        </div>
-        <button class="order">四川</button>
-        <div class="downtext">
-            <a href="#">猕猴桃</a>
-            <a href="#">枇杷</a>
-            <a href="#">水蜜桃</a>
-            <a href="#">雪梨</a>
-        </div>
-    </div> -->
+        <script type="text/javascript" src="jquery=3.4.1.min.js"></script>
+        <script type="text/javascript"></script>
+            $(function(){
+               
+            })
+            
+        
+        
+        
+        
+       
 </body>
 </html>
