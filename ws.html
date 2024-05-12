@@ -1,3 +1,4 @@
+
 <!-- DOCTYPE html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -22,17 +23,17 @@
     body{
         font-family: sans-serif;
     }
-    .logo{
+    .win-logo{
         color: var(--color-white);
         font-size: 30px;
 
     }
-    .logo span{
+    .win-logo span{
         color: var(--color-primary);
     }
-    .menu-bar{
+    .win-menu-bar{
         background-color: var(--color-black);
-        height: 80px;
+        height: 30%;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -40,27 +41,27 @@
         padding: 0 5%;
         position: relative;
     }
-    .menu-bar ul{
+    .win-menu-bar ul{
         list-style: none;
         display: flex;
     }
-    .menu-bar li{
+    .win-menu-bar li{
         /* width: 120%; */
         padding: 10px 30px;
         /* text-align: center; */
         position: relative;
 
     }
-    .menu-bar li a{
+    .win-menu-bar li a{
         font-size: 20px;
         color: var(--color-white);
         text-decoration: none;
         transition: all 0.3s;
     }
-    .menu-bar li a:hover{
+    .win-menu-bar li a:hover{
         color: var(--color-primary);
     }
-    .dropdown-menu{
+    .win-dropdown-menu{
         display:none;
         position: absolute;
         min-width: 160px;
@@ -69,47 +70,48 @@
         z-index: 1;
         scrollbar-width: none;
     }
-    .menu-bar ul li:hover
-    .dropdown-menu{
+    .win-menu-bar ul li:hover
+    .win-dropdown-menu{
         display: block;
         position: absolute;
         left: 0;
         top: 100%;
         background-color: var(--color-black);
     }
-    .menu-bar ul li:hover
-    .dropdown-menu ul{
+    .win-menu-bar ul li:hover
+    .win-dropdown-menu ul{
         display: block;
         margin: 10px;
     }
-    .menu-bar ul li:hover
-    .dropdown-menu li{
+    .win-menu-bar ul li:hover
+    .win-dropdown-menu li{
         width: 150px;
         padding: 10px;
         text-align: center;
     }
-    .box{
+    .win-box{
         width: 100%;
         height: 600px;
         position: relative;
         background-color: grey;
     }
-    .box-img{
+    .win-box-img{
         position: absolute;
         top: 0;
         left: 20%;
         top: 50px;
         opacity: 0;
+       
     }
-    .box:hover .box-img{
+    .win-box:hover .win-box-img{
         transform: scale(1.2);
     }
-    .box-img:nth-child(1){
+    .win-box-img:nth-child(1){
         opacity: 1;
     }
     
 
-    .box-left{
+    .win-box-left{
         position: absolute;
         width: 35px;
         height: 70px;
@@ -119,11 +121,11 @@
         text-align: center;
         line-height: 70px;
     }
-    .box-left:hover{
+    .win-box-left:hover{
         background-color: #00000050;
         color: white;
     }
-    .box-right{
+    .win-box-right{
         position: absolute;
         width: 35px;
         height: 70px;
@@ -134,17 +136,17 @@
         line-height: 70px;
         right: 0;
     }
-    .box-right:hover{
+    .win-box-right:hover{
         background-color: #00000050;
         color: white;
     }
-    .box-change ul{
+    .win-box-change ul{
         padding: 0;
         margin: 0;
         list-style: none;
         
     }
-    .box-change li{
+    .win-box-change li{
         width: 14px;
         height: 14px;
         border-radius: 100%;
@@ -153,11 +155,11 @@
         margin-right: 10px;
 
     }
-    .box-change li:hover{
+    .win-box-change li:hover{
         background-color: white;
     }
 
-    .box-change{
+    .win-box-change{
         position: absolute;
         bottom: 30px;
         right: 100px;
@@ -185,11 +187,11 @@
 </head>
 <body>
     <!-- <div class="downorder"> -->
-        <div class="menu-bar">
-            <h1 class="logo">水果 <span>之乡</span></h1>
+        <div class="win-menu-bar">
+            <h1 class="win-logo">水果 <span>之乡</span></h1>
                 <ul>
                     <li><a href="#"><span>简介</span><i>introduction</i></a>
-                        <div class="dropdown-menu">
+                        <div class="win-dropdown-menu">
                             <ul>
                                 <li><a href="#"><span>网站简介</span><i>profile</i></a></li>
                                 <li><a href="#"><span>发展历程</span><i>development history</i></a></li>
@@ -199,7 +201,7 @@
                         </div>
                     </li>
                     <li><a href="#"><span>云南</span><i>yunnan</i></a>
-                        <div class="dropdown-menu">
+                        <div class="win-dropdown-menu">
                             <ul>
                                 <li><a href="#"><span>石榴</span><i>pomegranate</i></a></li>
                                 <li><a href="#"><span>西瓜</span><i>watermelon</i></a></li>
@@ -209,7 +211,7 @@
                         </div>
                     </li>
                     <li><a href="#"><span>攀枝花</span><i>panzhihua</i></a>
-                        <div class="dropdown-menu">
+                        <div class="win-dropdown-menu">
                             <ul>
                                 <li><a href="#"><span>芒果</span><i>mango</i></a></li>
                                 <li><a href="#"><span>李子</span><i>plum</i></a></li>
@@ -219,7 +221,7 @@
                         </div>
                     </li>
                     <li><a href="#"><span>海南</span><i>hainan</i></a>
-                        <div class="dropdown-menu">
+                        <div class="win-dropdown-menu">
                             <ul>
                                 <li><a href="#"><span>椰子</span><i>coconut</i></a></li>
                                 <li><a href="#"><span>菠萝蜜</span><i>jackfruit</i></a></li>
@@ -229,7 +231,7 @@
                         </div>
                     </li>
                     <li><a href="#"><span>新疆</span><i>xinjiang</i></a>
-                        <div class="dropdown-menu">
+                        <div class="win-dropdown-menu">
                             <ul>
                                 <li><a href="#"><span>葡萄</span><i>grape</i></a></li>
                                 <li><a href="#"><span>哈密瓜</span><i>hami melon</i></a></li>
@@ -239,7 +241,7 @@
                         </div>
                     </li>
                     <li><a href="#"><span>四川</span><i>sichuan</i></a>
-                        <div class="dropdown-menu">
+                        <div class="win-dropdown-menu">
                             <ul>
                                 <li><a href="#"><span>猕猴桃</span><i>kiwifruit</i></a></li>
                                 <li><a href="#"><span>枇杷</span><i>loquat</i></a></li>
@@ -250,23 +252,23 @@
                     </li>  
                 </ul>
         </div>
-        <div class="box">
-            <div class="box-img"><img src="简介.jpg" width="1000" height="460"></div>
-            <div class="box-img"><img src="云南.jpg" width="1000" height="460"></div>
-            <div class="box-img"><img src="攀枝花.jpg" width="1000" height="460"></div>
-            <div class="box-img"><img src="海南.jpg" width="1000" height="460"></div>
-            <div class="box-img"><img src="新疆.jpg" width="1000" height="460"></div>
-            <div class="box-img"><img src="四川.jpg" width="1000" height="460"></div>
-            <div class="box-left">&lt;</div>
-            <div class="box-right">&gt;</div>
-            <div class="box-change">
+        <div class="win-box">
+            <div class="win-box-img"><img src="简介.jpg" width="1000" height="460"></div>
+            <div class="win-box-img"><img src="云南.jpg" width="1000" height="460"></div>
+            <div class="win-box-img"><img src="攀枝花.jpg" width="1000" height="460"></div>
+            <div class="win-box-img"><img src="海南.jpg" width="1000" height="460"></div>
+            <div class="win-box-img"><img src="新疆.jpg" width="1000" height="460"></div>
+            <div class="win-box-img"><img src="四川.jpg" width="1000" height="460"></div>
+            <div class="win-box-left">&lt;</div>
+            <div class="win-box-right">&gt;</div>
+            <div class="win-box-change">
                 <ul>
-                    <li class="button"></li>
-                    <li class="button"></li>
-                    <li class="button"></li>
-                    <li class="button"></li>
-                    <li class="button"></li>
-                    <li class="button"></li>
+                    <li class="win-button"></li>
+                    <li class="win-button"></li>
+                    <li class="win-button"></li>
+                    <li class="win-button"></li>
+                    <li class="win-button"></li>
+                    <li class="win-button"></li>
                     
                 </ul>
             </div>
@@ -281,44 +283,44 @@
             $(function(){
             var index=0;
             setInterval(function(){
-                if(index==$(".box-img").length-1){
+                if(index==$(".win-box-img").length-1){
                     index=0;
-                    $(".box-img").css("opacity","0");
-                    $(".box-img").eq(index).css("opacity","1");
+                    $(".win-box-img").css("opacity","0");
+                    $(".win-box-img").eq(index).css("opacity","1");
                 }else{
                     index++;
-                    $(".box-img").css("opacity","0");
-                    $(".box-img").eq(index).css("opacity","1");
+                    $(".win-box-img").css("opacity","0");
+                    $(".win-box-img").eq(index).css("opacity","1");
                 } 
             },2000)
-                $(".box-left").click(function(){
+                $(".win-box-left").click(function(){
                     
                     if(index==0){
-                        index=$(".box-img").length-1;
-                        $(".box-img").css("opacity","0");
-                        $(".box-img").eq(index).css("opacity","1");
+                        index=$(".win-box-img").length-1;
+                        $(".win-box-img").css("opacity","0");
+                        $(".win-box-img").eq(index).css("opacity","1");
                     }else{
                         index--;
-                        $(".box-img").css("opacity","0");
-                        $(".box-img").eq(index).css("opacity","1");
+                        $(".win-box-img").css("opacity","0");
+                        $(".win-box-img").eq(index).css("opacity","1");
                     } 
                 }) 
-                $(".box-right").click(function(){
-                    if(index==$(".box-img").length-1){
+                $(".win-box-right").click(function(){
+                    if(index==$(".win-box-img").length-1){
                         index=0;
-                        $(".box-img").css("opacity","0");
-                        $(".box-img").eq(index).css("opacity","1");
+                        $(".win-box-img").css("opacity","0");
+                        $(".win-box-img").eq(index).css("opacity","1");
                     }else{
                         index++;
-                        $(".box-img").css("opacity","0");
-                        $(".box-img").eq(index).css("opacity","1");
+                        $(".win-box-img").css("opacity","0");
+                        $(".win-box-img").eq(index).css("opacity","1");
                     }
                 })      
-                $(".button").click(function(){
+                $(".win-button").click(function(){
                var indexs=$(this).index();
                index=indexs;
-               $(".box-img").css("opacity","0");
-               $(".box-img").eq(index).css("opacity","1");
+               $(".win-box-img").css("opacity","0");
+               $(".win-box-img").eq(index).css("opacity","1");
 
             })
            
