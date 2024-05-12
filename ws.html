@@ -89,15 +89,20 @@
         text-align: center;
     }
     .box{
-        width: 1000px;
-        height: 460px;
+        width: 100%;
+        height: 600px;
         position: relative;
+        background-color: grey;
     }
     .box-img{
         position: absolute;
         top: 0;
-        left: 0;
+        left: 20%;
+        top: 50px;
         opacity: 0;
+    }
+    .box:hover .box-img{
+        transform: scale(1.2);
     }
     .box-img:nth-child(1){
         opacity: 1;
@@ -157,6 +162,24 @@
         bottom: 30px;
         right: 100px;
     }
+    /* .logo{
+        display: none;
+    }
+    .logo:hover span{
+        display: none;
+    }
+    .logo:hover i{
+        display: block;
+    } */
+    ul li a i{
+        display: none;
+    }
+    ul li a:hover span{
+        display: none;
+    }
+    ul li a:hover i{
+        display: block;
+    }
    </style>
     
 </head>
@@ -165,63 +188,63 @@
         <div class="menu-bar">
             <h1 class="logo">水果 <span>之乡</span></h1>
                 <ul>
-                    <li><a href="#">简介</a>
+                    <li><a href="#"><span>简介</span><i>introduction</i></a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a href="#">网站简介</a></li>
-                                <li><a href="#">发展历程</a></li>
-                                <li><a href="#">企业组成</a></li>
-                                <li><a href="#">企业文化</a></li>
+                                <li><a href="#"><span>网站简介</span><i>profile</i></a></li>
+                                <li><a href="#"><span>发展历程</span><i>development history</i></a></li>
+                                <li><a href="#"><span>企业组成</span><i>enterprise composition</i></a></li>
+                                <li><a href="#"><span>企业文化</span><i>enterprise culture</i></a></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="#">云南</a>
+                    <li><a href="#"><span>云南</span><i>yunnan</i></a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a href="#">石榴</a></li>
-                                <li><a href="#">西瓜</a></li>
-                                <li><a href="#">芒果</a></li>
-                                <li><a href="#">菠萝</a></li>
+                                <li><a href="#"><span>石榴</span><i>pomegranate</i></a></li>
+                                <li><a href="#"><span>西瓜</span><i>watermelon</i></a></li>
+                                <li><a href="#"><span>芒果</span><i>mango</i></a></li>
+                                <li><a href="#"><span>菠萝</span><i>pineapple</i></a></li>
                             </ul> 
                         </div>
                     </li>
-                    <li><a href="#">攀枝花</a>
+                    <li><a href="#"><span>攀枝花</span><i>panzhihua</i></a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a href="#">芒果</a></li>
-                                <li><a href="#">李子</a></li>
-                                <li><a href="#">莲雾</a></li>
-                                <li><a href="#">枇杷</a></li>
+                                <li><a href="#"><span>芒果</span><i>mango</i></a></li>
+                                <li><a href="#"><span>李子</span><i>plum</i></a></li>
+                                <li><a href="#"><span>莲雾</span><i>wax apple</i></a></li>
+                                <li><a href="#"><span>枇杷</span><i>loquat</i></a></li>
                             </ul> 
                         </div>
                     </li>
-                    <li><a href="#">海南</a>
+                    <li><a href="#"><span>海南</span><i>hainan</i></a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a href="#">椰子</a></li>
-                                <li><a href="#">菠萝蜜</a></li>
-                                <li><a href="#">荔枝</a></li>
-                                <li><a href="#">芒果</a></li>
+                                <li><a href="#"><span>椰子</span><i>coconut</i></a></li>
+                                <li><a href="#"><span>菠萝蜜</span><i>jackfruit</i></a></li>
+                                <li><a href="#"><span>荔枝</span><i>litchi</i></a></li>
+                                <li><a href="#"><span>芒果</span><i>mango</i></a></li>
                             </ul> 
                         </div>
                     </li>
-                    <li><a href="#">新疆</a>
+                    <li><a href="#"><span>新疆</span><i>xinjiang</i></a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a href="#">葡萄</a></li>
-                                <li><a href="#">哈密瓜</a></li>
-                                <li><a href="#">香梨</a></li>
-                                <li><a href="#">苹果</a></li>
+                                <li><a href="#"><span>葡萄</span><i>grape</i></a></li>
+                                <li><a href="#"><span>哈密瓜</span><i>hami melon</i></a></li>
+                                <li><a href="#"><span>香梨</span><i>pear</i></a></li>
+                                <li><a href="#"><span>苹果</span><i>apple</i></a></li>
                             </ul> 
                         </div>
                     </li>
-                    <li><a href="#">四川</a>
+                    <li><a href="#"><span>四川</span><i>sichuan</i></a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a href="#">猕猴桃</a></li>
-                                <li><a href="#">枇杷</a></li>
-                                <li><a href="#">水蜜桃</a></li>
-                                <li><a href="#">雪梨</a></li>
+                                <li><a href="#"><span>猕猴桃</span><i>kiwifruit</i></a></li>
+                                <li><a href="#"><span>枇杷</span><i>loquat</i></a></li>
+                                <li><a href="#"><span>水蜜桃</span><i>honey paech</i></a></li>
+                                <li><a href="#"><span>雪梨</span><i>pear</i></a></li>
                             </ul> 
                         </div>
                     </li>  
